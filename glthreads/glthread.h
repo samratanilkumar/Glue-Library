@@ -39,4 +39,8 @@ init_glthread(glthread_t *glthread, unsigned int offset);
 #define offsetof(struct_name, field_name)   \
     ((unsigned int)&((struct_name *)0)->field_name)
 
+#define TOGGLE_BIT(n,BIT_F) \
+       BIT_F= (1<<n)^(BIT_F)
+     
+
 #endif /* __GLTHREADS__ */
